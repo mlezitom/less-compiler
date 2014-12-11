@@ -1,5 +1,7 @@
 <?php
 
+namespace Mlezitom;
+
 /**
  * LessCompiler
  *
@@ -14,10 +16,10 @@ class LessCompiler {
 	public function run() {
 		
 		if(!$this->srcPath) {
-			throw new \Nette\InvalidStateException("Please specify srcPath first.");
+			throw new \UnexpectedValueException("Please specify srcPath first.");
 		}
 		if(!$this->targetPath) {
-			throw new \Nette\InvalidStateException("Please specify targetPath first.");
+			throw new \UnexpectedValueException("Please specify targetPath first.");
 		}
 		
 		$lastLessEditTime = 0;
