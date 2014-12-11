@@ -16,6 +16,6 @@
     ],
     "require": {
         "leafo/lessphp": "0.4.*",
-        "nette/utils": "~2.*"
+        "nette/utils": ">2.2.2"
     }
 }
