@@ -1,0 +1,20 @@
+{
+    "name": "mlezitom/less-compiler",
+    "type": "library",
+    "version": "1.0.0",
+    "description": "Less compiler",
+    "homepage": "https://github.com/mlezitom/less-compiler",
+    "license": [
+      "Unlicense"
+    ],
+    "authors": [
+        {
+            "name": "Tomas Mleziva",
+            "email": "mlezivat@gmail.com",
+            "homepage": "http://github.com/mlezitom"
+        }
+    ],
+    "require": {
+        "leafo/lessphp": "0.4.*"
+    }
+}
