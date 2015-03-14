@@ -21,6 +21,9 @@ class LessCompiler {
 		if(!$this->targetPath) {
 			throw new \UnexpectedValueException("Please specify targetPath first.");
 		}
+		if(!is_dir($this->targetPath)) {
+			mkdir($this->targetPath, 0777);
+		}
 		
 		$lastLessEditTime = 0;
 		foreach(\Nette\Utils\Finder::find("*.less")->from($this->getSrcPath()) as $file) {
